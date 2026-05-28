@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Викторина по Data Analysis</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="quiz_box">
+        <h1>Data Analysis</h1>
+        
+        <div class="progress_wrap">
+            <div class="progress_line" id="progress_bar">0/10</div>
+        </div>
+
+        <div id="question_area">
+            <p class="question_text" id="q_text"></p>
+            <div class="buttons_list" id="btns"></div>
+            <p class="hint" id="hint"></p>
+        </div>
+
+        <div id="result_area" class="hidden">
+            <p class="score_text" id="score"></p>
+            <p class="message_text" id="message"></p>
+            <button class="again_btn" onclick="start_again()">🔄 Начать заново</button>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
